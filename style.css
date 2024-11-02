@@ -1,0 +1,676 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main{
+    height: 550vh;
+    width: 100%;
+}
+
+header{
+    height: 10vh;
+    width: 100%;
+    background-color:  #7A9D8D;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-size: 17px;
+    box-shadow: 0 .1rem .2rem black;
+    font-family: "Roboto Mono", monospace;
+}
+
+header svg{
+    height: 10vh;
+    width: 55px;
+    fill: white;
+    margin-left: 3%;
+  
+}
+
+body {
+  background-color: white;
+  color: black;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+#eu{
+    color: white;
+    font-size: 35px;
+    margin-left: 15%;
+    font-family: "Roboto Mono", monospace;
+   padding-top: 6px;
+}
+
+#cinza{
+    font-size: 30px;
+    font-family: "Roboto Mono", monospace;
+   font-weight: bold;
+    color: gray;
+}
+
+
+
+  .wrapper {
+    display: inline-flex;
+    margin-top: 10%;
+    margin-left: 34%;
+    font-family: "Roboto Mono", monospace;
+  }
+  .wrapper .static-txt {
+    font-size: 60px;
+    font-weight: 400;
+    color: black;
+  }
+  .wrapper .dynamic-txts {
+    margin-left: 15px;
+    height: 90px;
+    line-height: 91px;
+    overflow: hidden;
+  }
+  .wrapper .dynamic-txts li {
+    list-style: none;
+    font-size: 60px;
+    font-weight: 500;
+    color: #7A9D8D;
+    position: relative;
+    top: 0;
+    animation: slide 6s steps(4) infinite;
+  }
+  @keyframes slide {
+    100% {
+      top: -360px;
+      margin: 0 -35px 0 35px;
+    }
+    
+  }
+  .dynamic-txts li span {
+    position: relative;
+  }
+  .dynamic-txts li span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    border-left: 2px solid black;
+    width: 100%;
+    height: 100%;
+    background: white;
+    animation: typing 1.5s steps(11) infinite;
+  }
+  @keyframes typing {
+    100% {
+      left: 100%;
+      margin: 0 -35px 0 35px;
+    }
+    
+  }
+
+#sobreh1{
+    font-size: 45px;
+    font-family: "Roboto Mono", monospace;
+    margin-top : 15% ;
+    margin-left: 15%;
+    color: #7A9D8D;
+    
+
+}
+
+#sobremim p {
+  font-size: 25px;
+  font-family: "Roboto Mono", monospace;
+  
+  margin-left: 20%;
+}
+
+
+#sobremim{
+  width: 70%;
+  margin-left: 5%;
+ 
+}
+
+#sobre1{
+  margin-top: 7%;
+}
+
+#azul{
+  color: #7A9D8D;
+  font-size: 23px;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 700;
+}
+
+
+#imagem img{
+  height: 310px;
+  width: 300px;
+margin-top: 11%;
+border: solid 6px #7A9D8D;
+margin-left: 50%;
+  border-radius: 100%;
+  display: flex;
+  box-shadow: 0 .1rem .2rem black;
+}
+
+#habilidades1{
+
+  font-size: 45px;
+    font-family: "Roboto Mono", monospace;
+    margin-top : 15% ;
+    margin-left: 15%;
+    color: #7A9D8D;
+}
+
+#habilidades{
+  height: 50vh;
+  width: 100%;
+ 
+  margin-top: 7%;
+  align-items: center;
+  display: flex;
+  gap: 90px;
+  
+}
+
+
+#powerpoint svg{
+  height: 120px;
+  width: 120px;
+  fill: white;
+  margin-left: 140%;
+  border: solid 6px white;
+  border-radius: 0rem 2rem 0rem 2rem;
+  padding: 10px;
+  background-color: #7A9D8D;
+  border: solid 3px black;
+  box-shadow: 0 .1rem .2rem black;
+}
+
+#powerpoint p{
+  font-size: 15px;
+  font-family: "Roboto Mono", monospace;
+  margin-left: 170%;
+  font-weight: 900;
+  margin-top: 6%;
+}
+
+#excel p{
+  font-size: 15px;
+  font-family: "Roboto Mono", monospace;
+  margin-left: 170%;
+  font-weight: 900;
+  margin-top: 6%;
+}
+
+#word p{
+  font-size: 15px;
+  font-family: "Roboto Mono", monospace;
+  margin-left: 175%;
+  font-weight: 900;
+  margin-top: 6%;
+}
+
+#html p{
+  font-size: 15px;
+  font-family: "Roboto Mono", monospace;
+  margin-left: 177%;
+  font-weight: 900;
+  margin-top: 6%;
+}
+
+
+#java p{
+  font-size: 15px;
+  font-family: "Roboto Mono", monospace;
+  margin-left: 180%;
+  font-weight: 900;
+  margin-top: 6%;
+}
+
+#csharp p{
+  font-size: 15px;
+  font-family: "Roboto Mono", monospace;
+  margin-left: 182%;
+  font-weight: 900;
+  margin-top: 6%;
+}
+
+#sql p{
+  font-size: 15px;
+  font-family: "Roboto Mono", monospace;
+  margin-left: 172%;
+  font-weight: 900;
+  margin-top: 6%;
+}
+
+#hardware p{
+  font-size: 15px;
+  font-family: "Roboto Mono", monospace;
+  margin-left: 165%;
+  font-weight: 900;
+  margin-top: 6%;
+}
+#excel  svg{
+  height: 120px;
+  width: 120px;
+  fill: white;
+  margin-left: 140%;
+  border: solid 6px white;
+  border-radius: 0rem 2rem 0rem 2rem;
+  padding: 10px;
+  background-color: #7A9D8D;
+  border: solid 3px black;
+  box-shadow: 0 .1rem .2rem black;
+}
+
+#word  svg{
+  height: 120px;
+  width: 120px;
+  fill: white;
+  margin-left: 140%;
+  border: solid 6px white;
+  border-radius: 0rem 2rem 0rem 2rem;
+  padding: 10px;
+  background-color: #7A9D8D;
+  border: solid 3px black;
+  box-shadow: 0 .1rem .2rem black;
+}
+#java  svg{
+  height: 120px;
+  width: 120px;
+  fill: white;
+  margin-left: 140%;
+  border: solid 6px white;
+  border-radius: 0rem 2rem 0rem 2rem;
+  padding: 10px;
+  background-color: #7A9D8D;
+  border: solid 3px black;
+  box-shadow: 0 .1rem .2rem black;
+}
+
+#html svg{
+  height: 120px;
+  width: 120px;
+  fill: white;
+  margin-left: 140%;
+  border: solid 6px white;
+  border-radius: 0rem 2rem 0rem 2rem;
+  padding: 10px;
+  background-color: #7A9D8D;
+  border: solid 3px black;
+  box-shadow: 0 .1rem .2rem black;
+
+}
+
+#csharp svg{
+  height: 120px;
+  width: 120px;
+  fill: white;
+  margin-left: 140%;
+  border: solid 6px white;
+  border-radius: 0rem 2rem 0rem 2rem;
+  padding: 10px;
+  background-color: #7A9D8D;
+  border: solid 3px black;
+  box-shadow: 0 .1rem .2rem black;
+}
+#sql svg{
+  height: 120px;
+  width: 120px;
+  fill: white;
+  margin-left: 140%;
+  border: solid 6px white;
+  border-radius: 0rem 2rem 0rem 2rem;
+  padding: 10px;
+  background-color: #7A9D8D;
+  border: solid 3px black;
+  box-shadow: 0 .1rem .2rem black;
+}
+#sql:hover{
+  scale: 1.2;
+ 
+}
+
+#sql{
+  transition: 0.5s;
+}
+
+#hardware svg{
+  height: 120px;
+  width: 120px;
+  fill: white;
+  margin-left: 140%;
+  border: solid 6px white;
+  border-radius: 0rem 2rem 0rem 2rem;
+  padding: 10px;
+  background-color: #7A9D8D;
+  border: solid 3px black;
+  box-shadow: 0 .1rem .2rem black;
+}
+#hardware:hover{
+  scale: 1.2;
+ 
+}
+
+#hardware{
+  transition: 0.5s;
+}
+
+#csharp:hover{
+  scale: 1.2;
+ 
+}
+
+#csharp{
+  transition: 0.5s;
+}
+
+#excel:hover{
+  scale: 1.2;
+ 
+}
+
+#excel{
+  transition: 0.5s;
+}
+
+#powerpoint:hover{
+  scale: 1.2;
+ 
+}
+
+#powerpoint{
+  transition: 0.5s;
+}
+
+#word:hover{
+  scale: 1.2;
+ 
+}
+
+#word{
+  transition: 0.5s;
+}
+
+#html:hover{
+  scale: 1.2;
+ 
+}
+
+#html{
+  transition: 0.5s;
+}
+
+#java:hover{
+  scale: 1.2;
+ 
+}
+
+#java{
+  transition: 0.5s;
+}
+
+
+#projetos1{
+  font-size: 45px;
+  font-family: "Roboto Mono", monospace;
+  margin-top : 12% ;
+  margin-left: 15%;
+  color: white;
+  
+
+}
+
+
+#projetos{ background-color: black;
+  height: 100vh;
+  width: 100%;
+  margin-top: 10%;
+
+}
+
+#tabela img{
+  height: 30vh;
+  width:55vh;
+  margin-top: 3%;
+  margin-left: 7%;
+  border-radius: 20px;
+}
+
+#tabela{
+  display: flex;
+}
+
+#tabela h1{
+  color: #7A9D8D;
+  font-size: 25px;
+  margin-top: 3%;
+  font-family: "Roboto Mono", monospace;
+  margin-left: 10%;
+}
+
+.branco{
+  color: white;
+}
+#tabela p{
+  color: #7A9D8D;
+  font-size: 25px;
+  
+  font-family: "Roboto Mono", monospace;
+
+}
+
+#espacamentocards{
+ gap: 70px 0px;
+
+}
+
+.col-md-4{
+  margin-top: 10%;
+}
+
+.card img{
+
+  padding: 5px;
+  height: 150px;
+  border-radius: 10px;
+}
+
+.card{
+  border-radius: 70px;
+  background-color: #7A9D8D;
+}
+
+.card-title{
+  color: #7A9D8D;
+  font-size: 25px;
+  margin-top: 3%;
+  font-family: "Roboto Mono", monospace;
+}
+
+.verde{
+  color: #7A9D8D;
+  font-size: 17px;
+  font-family: "Roboto Mono", monospace;
+}
+
+#li-header{
+  list-style: none;
+  display: flex;
+  text-decoration: none;
+  gap: 30px;
+  font-family: "Roboto Mono", monospace;
+  color: black;
+}
+
+#lista-contato{
+  text-align: center;
+  margin-top: 13%;
+  padding-right: 120px;
+  
+}
+
+#lista-contato li{
+  list-style-type: none;
+
+}
+
+#lista-contato input{
+  width: 600px;
+  height: 50px;
+  font-size: 20px;
+  font-family: "KoHo", sans-serif;
+  font-style: normal;
+  box-shadow: 0 .1rem .2rem black;
+  border-radius: 5px;
+}
+
+#lista-contato ul{
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  
+}
+
+#mensagem input{
+  height: 170px;
+  box-shadow: 0 .1rem .2rem black;
+  border-radius: 10px;
+}
+
+#enviar button{
+  height: 60px;
+  font-size: 20px;
+  font-family: "KoHo", sans-serif;
+margin-left: 17.5%;
+  width: 200px;
+  font-weight: 500;
+  background-color: #7A9D8D;
+  color: black;
+  border-radius: 10px;
+  box-shadow: 0 .1rem .2rem black;
+}
+#enviar{
+  padding-left: 852px;
+  padding-top: 20px;
+}
+
+#enviar a{
+  text-decoration: none;
+  color: white;
+}
+
+
+.dark-mode {
+  background-color: #182216;
+  color: white;
+}
+
+.dark-mode img {
+  color: white;
+}
+
+header a{
+  justify-content: flex-end;
+}
+
+#rodape svg{
+  height: 55px;
+  padding-top: 20px;
+padding-left: 790px;
+text-align: center;
+align-items: center;
+fill: black;
+}
+
+#rodape p{
+  font-family: "Roboto Mono", monospace;
+  display: flex;
+  text-align: center;
+  align-items: center; 
+  color: black;
+  width: 100%;
+ margin-left: 2%;
+  padding-top: 25px;
+}
+
+#rodape{
+  background-color: #7A9D8D;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  border: black solid 1px;
+}
+
+
+.projects-fotos {
+
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 0;
+  margin-right: 0;
+  gap: 30px;
+  margin-top: 15%;
+}
+
+.projects-fotos div {
+  width: 25%;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 40px;
+  margin-left: 6%;
+  margin-top: 5%;
+  border: solid 3px #7A9D8D;
+  box-shadow: 0 .2rem .3rem black;
+  
+}
+
+.projects-fotos img:hover{
+  scale: 1.2;
+ 
+}
+
+.projects-fotos img{
+  transition: 0.5s;
+}
+
+
+
+
+.projects-fotos img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  transition: 1s;
+
+ 
+}
+
+.projects-fotos svg {
+  fill: #7A9D8D;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  height: 30px;
+  transform: translate(-50%,-50%);
+  opacity: 0;
+  transition: 1s;
+}
+
+.projects-fotos div:hover svg {
+  top: 50%;
+  opacity: 1;
+}
+
+.projects-fotos div:hover img {
+  filter: brightness(50%);
+}
+
+ 

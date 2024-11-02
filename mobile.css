@@ -1,0 +1,18 @@
+@media (max-width: 600px) {
+
+    header{
+    width: 1000px ;
+}
+
+    .wrapper{
+margin-left: 50%;
+}
+    #imagem img{
+     margin-left: 100%;
+    }
+    
+    #sobremim #sobre1{
+        margin-top: 50%;
+        margin-left: 50%;
+    }
+  }
